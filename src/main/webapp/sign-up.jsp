@@ -5,28 +5,28 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Login Page</title>
+<title>Sign-up Page</title>
 </head>
 <body>
-	<form:form action="process-login" method="post">
+	<form:form action="process-signup" method="post" modelAttribute="signUpDto">
 		<table> 
 			<tr>
 				<td><label for="user">User  </label></td>
-				<td><input type="text"  name="username" id="user" /></td>
+				<td><input type="text"  name="UserName" id="user" /></td>
 			</tr>
 			<tr>
 				<td><label for="textName">password  </label></td>
-				<td><input type="text" name="password" id="textName" /></td>
+				<td><input type="text" name="Password" id="textName" /></td>
+			</tr>
+			<tr>
+				<td><label for="Role">role  </label></td>
+				<td><input type="text" name="Role" id="Role" /></td>
 			</tr>
 			<tr>
 				<td></td>
-				<td><input type="submit" value="log-in"></td>
+				<td><input type="submit" value="sign-up"></td>
 			</tr>
 		</table>
-	</form:form>
-	
-	<form:form action="redirectToSignUp" method="get">
-			<input type="submit" value="New-User">
 	</form:form>
 </body>
 </html>
